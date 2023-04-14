@@ -11,10 +11,11 @@
 
 ![ProjetoConceitual](https://user-images.githubusercontent.com/38386145/232138446-2244e21c-854c-4c8a-b073-7f3f7b4f476b.png)
 
-<h1> Projeto Lógico </h1>
-```
-<br/>
+## Projeto Lógico 
 
+
+
+```
 Cliente (CPF, Nome, CEP, Número);<br/>
 Telefone(CPF, Telefone)<br/>
         CPF -> Cliente(CPF);<br/>
@@ -41,6 +42,6 @@ Oferecem(Data, CodServiço, CodProduto, CodLoja!)<br/>
         CodServiço -> Serviço(CodServiço)<br/>
         CodProduto -> Produto(CodProduto)<br/>
 CodLoja -> Loja(CodLoja);<br/>
-  ```
+```
   
  
