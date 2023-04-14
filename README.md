@@ -7,7 +7,7 @@
   </li>
 </ul>
 
-<h1> Projeto Conceitual </h1>
+## Projeto Conceitual 
 
 ![ProjetoConceitual](https://user-images.githubusercontent.com/38386145/232138446-2244e21c-854c-4c8a-b073-7f3f7b4f476b.png)
 
@@ -16,32 +16,32 @@
 
 
 ```
-Cliente (CPF, Nome, CEP, Número);<br/>
-Telefone(CPF, Telefone)<br/>
-        CPF -> Cliente(CPF);<br/>
-Animal(CodAnimal, CPF, Nome, Raça, Sexo, dt_nascimento)<br/>
-        CPF -> Cliente(CPF);<br/>
-Clinica (CNPJ, Nome, Localização);<br/>
-Desconto (Cupom, Valor);<br/>
-Contratam (CPF, CNPJ, Cupom)<br/>
-        CPF -> Cliente(CPF)<br/>
-        CNPJ -> Clínica(CNPJ)<br/>
-Cupom -> Desconto(Cupom);<br/>
-Empregado (CodEmpregado, CNPJ, Telefone, Nome, Salario, CHEFE)<br/>
-        CNPJ -> Clínica(CNPJ)<br/>
-        CHEFE -> Empregado(CodEmpregado);<br/>
-Graduado(CodEmpregado, Diploma, Função)<br/>
-        CodEmpregado -> Empregado(CodEmpregado);<br/>
-Tecnico(CodEmpregado, Função)<br/>
-CodEmpregado -> Empregado(CodEmpregado);<br/>
-Loja(CodLoja, CNPJ, Telefone, Endereço)<br/>
-        CNPJ -> Clínica(CNPJ);<br/>
-Serviço(CodServiço, CodCliente, Data, Tipo, Valor);<br/>
-Produto(CodProduto, Marca, ValorUnitário, Tipo);<br/>
-Oferecem(Data, CodServiço, CodProduto, CodLoja!)<br/>
-        CodServiço -> Serviço(CodServiço)<br/>
-        CodProduto -> Produto(CodProduto)<br/>
-CodLoja -> Loja(CodLoja);<br/>
+Cliente (CPF, Nome, CEP, Número);
+Telefone(CPF, Telefone)
+        CPF -> Cliente(CPF);
+Animal(CodAnimal, CPF, Nome, Raça, Sexo, dt_nascimento)
+        CPF -> Cliente(CPF);
+Clinica (CNPJ, Nome, Localização);
+Desconto (Cupom, Valor);
+Contratam (CPF, CNPJ, Cupom)
+        CPF -> Cliente(CPF)
+        CNPJ -> Clínica(CNPJ)
+Cupom -> Desconto(Cupom);
+Empregado (CodEmpregado, CNPJ, Telefone, Nome, Salario, CHEFE)
+        CNPJ -> Clínica(CNPJ)
+        CHEFE -> Empregado(CodEmpregado);
+Graduado(CodEmpregado, Diploma, Função)
+        CodEmpregado -> Empregado(CodEmpregado);
+Tecnico(CodEmpregado, Função)
+CodEmpregado -> Empregado(CodEmpregado);
+Loja(CodLoja, CNPJ, Telefone, Endereço)
+        CNPJ -> Clínica(CNPJ);
+Serviço(CodServiço, CodCliente, Data, Tipo, Valor);
+Produto(CodProduto, Marca, ValorUnitário, Tipo);
+Oferecem(Data, CodServiço, CodProduto, CodLoja!)
+        CodServiço -> Serviço(CodServiço)
+        CodProduto -> Produto(CodProduto)
+CodLoja -> Loja(CodLoja);
 ```
   
  
