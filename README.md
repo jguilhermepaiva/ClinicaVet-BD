@@ -9,6 +9,6 @@
 
 <h1> Projeto Conceitual </h1>
 
-https://github.com/jguilhermepaiva/ClinicaVet-BD/issues/2#issue-1668836081
+![ProjetoConceitual](https://user-images.githubusercontent.com/38386145/232138446-2244e21c-854c-4c8a-b073-7f3f7b4f476b.png)
 
 <h1> Projeto Lógico </h1>
