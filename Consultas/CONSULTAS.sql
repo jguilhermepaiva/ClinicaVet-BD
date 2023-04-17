@@ -35,7 +35,7 @@ FROM empregado e
 RIGHT OUTER JOIN graduado g
 ON e.CODEMPREGADO = g.CODEMPREGADO;
 
--- uma lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários e os funcionários que não estão atribuídos a uma clínica específica (FULL OUTER JOIN)
+-- Lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários e os funcionários que não estão atribuídos a uma clínica específica (FULL OUTER JOIN)
 SELECT c.nome as nome_clinica, c.localizacao, e.nome as nome_empregado
 FROM clinica c
 FULL OUTER JOIN empregado e
