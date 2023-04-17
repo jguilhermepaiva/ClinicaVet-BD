@@ -43,5 +43,13 @@ Oferecem(Data, CodServiço, CodProduto, CodLoja!)
         CodProduto -> Produto(CodProduto)
 CodLoja -> Loja(CodLoja);
 ```
-  
+
+## Projeto Físico
+
+#### Criação de Tabelas
+
+https://github.com/jguilhermepaiva/ClinicaVet-BD/blob/main/Projeto%20F%C3%ADsico/TABELAS.sql
+
+#### Povoamento das Tabelas
+https://github.com/jguilhermepaiva/ClinicaVet-BD/blob/main/Projeto%20F%C3%ADsico/POVOAMENTO.sql
  
