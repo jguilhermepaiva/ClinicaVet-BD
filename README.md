@@ -41,7 +41,7 @@
  
 <td align="center"><a href="https://github.com/Shellyda"><img src="https://avatars.githubusercontent.com/u/69990297?v=4" width="100px;" alt=""/><br /><sub><b>Shellyda Barbosa</b></sub></a><br/></td>
     
-<td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>Alexandre Vieira</b></sub></a><br/></td>
+<td align="center"><a href="https://github.com/alexandrevieiraleonardo"><img src="https://avatars.githubusercontent.com/u/29523630?v=4" width="100px;" alt=""/><br /><sub><b>Alexandre Vieira</b></sub></a><br/></td>
  </tr>
  </table>
 
