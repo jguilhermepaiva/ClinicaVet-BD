@@ -23,10 +23,10 @@ HAVING COUNT(*) >= 2;
 
 --- JUNÇÃO EXTERNA (OUTER JOIN) --- 
 
--- Lista de todos os animais e seus proprietários, mesmo que alguns animais não tenham um proprietário associado (LEFT OUTER JOIN)
-SELECT a.nome as nome_animal, c.nome as nome_cliente
-FROM animal a
-LEFT OUTER JOIN cliente c
+-- Lista de todos os proprietários e animais, mesmo que alguns proprietário não tenham um animal associado (LEFT OUTER JOIN)
+SELECT c.nome as nome_cliente, a.nome as nome_animal
+FROM  cliente c
+LEFT OUTER JOIN animal a
 ON a.CPF = c.CPF;
 
 -- Lista de todos os funcionários que possuem uma graduação universitária e suas informações de emprego correspondentes, mesmo que alguns funcionários não tenham uma correspondência na tabela "empregado" (RIGHT OUTER JOIN)
@@ -35,10 +35,16 @@ FROM empregado e
 RIGHT OUTER JOIN graduado g
 ON e.CODEMPREGADO = g.CODEMPREGADO;
 
--- Lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários e os funcionários que não estão atribuídos a uma clínica específica (FULL OUTER JOIN)
+-- Lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários. (FULL OUTER JOIN)
 SELECT c.nome as nome_clinica, c.localizacao, e.nome as nome_empregado
 FROM clinica c
 FULL OUTER JOIN empregado e
 ON c.CNPJ = e.CNPJ;
 
----
+--- Lista das Clinicas que possuem 3 ou mais funcionários (GROUP BY)
+
+SELECT C.NOME, COUNT(*)
+FROM CLINICA C INNER JOIN EMPREGADO E
+ON C.CNPJ = E.CNPJ
+GROUP BY C.NOME
+HAVING COUNT(*) > 2;
