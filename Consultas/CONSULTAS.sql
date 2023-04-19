@@ -95,6 +95,10 @@ FROM TABLE(
     WHERE CPF = '35925740105'
 );
 
+-- CONSULTANDO OS CHEFES DOS EMPREGADOS
+SELECT E.nome as NOME_DO_EMPREGADO, DEREF(E.CHEFE).nome as NOME_DO_CHEFE
+FROM EMPREGADO E;
+
 -- Consultando o endereço do cliente de nome 'João da Silva Santos'
 DECLARE
     mb TP_CLIENTE;
@@ -104,6 +108,3 @@ BEGIN
     mb.endereco.exibirEndereco();
 END;
 
--- CONSULTANDO OS CHEFES DOS EMPREGADOS
-SELECT E.nome as NOME_DO_EMPREGADO, DEREF(E.CHEFE).nome as NOME_DO_CHEFE
-FROM EMPREGADO E;
