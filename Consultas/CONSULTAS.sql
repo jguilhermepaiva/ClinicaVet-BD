@@ -52,12 +52,11 @@ WHERE CODSERVICO IN (
    WHERE CODLOJA = 'L000000005'
 );
 
---- Lista os empregados que não possuem curso técnico | ANTI JOIN
-SELECT e.*
-FROM empregado e
-LEFT JOIN tecnico t
-ON e.CPF = t.CPF_EMPREGADO
-WHERE t.CPF_EMPREGADO IS NULL;
+--- Lista dos clientes que não contrataram nada | ANTI JOIN
+SELECT cliente.nome,
+FROM cliente
+LEFT JOIN contratam ON cliente.CPF = contratam.CPF_CLIENTE
+WHERE contratam.CPF_CLIENTE IS NULL;
 
 --- Lista das Clinicas que possuem 2 ou mais funcionários | GROUP BY
 SELECT C.NOME, COUNT(*)
@@ -81,13 +80,11 @@ WHERE CODPRODUTO = oferecem.CODPRODUTO)
 AS preco_unitario
 FROM oferecem;
 
-
--- LISTA DOS TELEFONES DE CADA CLIENTE
+--- Lista dos telefones de cada cliente
 SELECT C.NOME, T.*
 FROM CLIENTE C, TABLE(C.TELEFONES) T;
 
-
--- CONSULTANDO OS NUMS DE TELEFONE DO CLIENTE DE CPF '35925740105'
+--- Consultando os numeros de telefone do cliente de CPF '35925740105'
 SELECT *
 FROM TABLE(
     SELECT C.TELEFONES
@@ -95,7 +92,7 @@ FROM TABLE(
     WHERE CPF = '35925740105'
 );
 
--- CONSULTANDO OS CHEFES DOS EMPREGADOS
+--- Consultando o endereço do cliente de nome 'João da Silva Santos'
 SELECT E.nome as NOME_DO_EMPREGADO, DEREF(E.CHEFE).nome as NOME_DO_CHEFE
 FROM EMPREGADO E;
 
