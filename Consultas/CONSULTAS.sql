@@ -13,7 +13,7 @@ GROUP BY produto.tipo, produto.marca
 HAVING COUNT(*) >= 2;
 
 --- Lista dos clientes que possuem pelo menos um animal em sua posse e a lista dos animais que eles possuem | SUBCONSULTA DO TIPO TABELA
-SELECT c.nome, c.cep, c.CPF, a.CODANIMAL as cod_animal, a.nome as nome_animal
+SELECT c.nome, c.CPF, a.CODANIMAL as cod_animal, a.nome as nome_animal
 FROM cliente c
 INNER JOIN (
     SELECT CPF_CLIENTE, CODANIMAL, NOME
@@ -80,3 +80,28 @@ FROM produto
 WHERE CODPRODUTO = oferecem.CODPRODUTO)
 AS preco_unitario
 FROM oferecem;
+
+
+-- LISTA DOS TELEFONES DE CADA CLIENTE
+SELECT C.NOME, T.*
+FROM CLIENTE C, TABLE(C.TELEFONES) T;
+
+
+-- CONSULTANDO OS NUMS DE TELEFONE DO CLIENTE DE CPF '35925740105'
+SELECT *
+FROM TABLE(
+    SELECT C.TELEFONES
+    FROM CLIENTE C
+    WHERE CPF = '35925740105'
+);
+
+
+-- CONSULTANDO O ENDEREÇO  DO CLIENTE DE NOME 'João da Silva Santos'
+
+DECLARE
+    mb TP_CLIENTE;
+BEGIN 
+    SELECT VALUE(c) INTO mb FROM CLIENTE c
+    WHERE c.nome = 'João da Silva Santos';
+    mb.endereco.exibirEndereco();
+END;
