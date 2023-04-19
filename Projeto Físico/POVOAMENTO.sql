@@ -18,7 +18,7 @@ INSERT INTO ANIMAL VALUES ('A000000003', '35925740105', 'Thor', 'Golden Retrieve
 INSERT INTO ANIMAL VALUES ('A000000004', '54817680910', 'Lila', 'Shih-tzu', 'F', TO_DATE('2017-11-23', 'YYYY-MM-DD'));
 INSERT INTO ANIMAL VALUES ('A000000005', '95180220707', 'Mel', 'Labrador', 'F', TO_DATE('2016-12-10', 'YYYY-MM-DD'));
 INSERT INTO ANIMAL VALUES ('A000000006', '11498702315', 'Boby', 'Buldogue', 'M', TO_DATE('2019-03-22', 'YYYY-MM-DD'));
-INSERT INTO ANIMAL VALUES ('A000000007', '12345678900', 'Billy', 'Beagle', 'M', TO_DATE('2015-09-05', 'YYYY-MM-DD'));
+INSERT INTO ANIMAL VALUES ('A000000007', '12345678900', 'Tony', 'Beagle', 'M', TO_DATE('2015-09-05', 'YYYY-MM-DD'));
 INSERT INTO ANIMAL VALUES ('A000000008', '78965432199', 'Sophie', 'Lhasa Apso', 'F', TO_DATE('2018-10-18', 'YYYY-MM-DD'));
 INSERT INTO ANIMAL VALUES ('A000000009', '11122233344', 'Rex', 'Dálmata', 'M', TO_DATE('2021-01-30', 'YYYY-MM-DD'));
 
@@ -70,12 +70,12 @@ INSERT INTO EMPREGADO VALUES ('Lorena', '09876543210', tp_endereco('04567-123', 
 INSERT INTO EMPREGADO VALUES ('Rafael', '23456789101', tp_endereco('30110-021', 'Rua da Bahia', '1000', 'Belo Horizonte'), '12345678901239', 2800.00, tp_telefones(tp_telefone('(31)98567-1234')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '09876543210'));
 INSERT INTO EMPREGADO VALUES ('Carla', '34567891235', tp_endereco('88010-301', 'Avenida Beira Mar', '150', 'Florianópolis'), '12345678901240', 4000.00, tp_telefones(tp_telefone('(48)98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '09876543210'));
 INSERT INTO EMPREGADO VALUES ('Renato', '45678912302', tp_endereco('22220-030', 'Rua Visconde de Pirajá', '500', 'Rio de Janeiro'), '12345678901241', 3200.00, tp_telefones(tp_telefone('(21)99765-4321')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '98765432101'));
-INSERT INTO EMPREGADO VALUES ('Gabriela', '56789123406', tp_endereco('04108-042', 'Rua Américo Brasiliense', '250', 'São Paulo'), '12345678901243', 5000.00, tp_telefones(tp_telefone('(11)98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '45678912302'));
+INSERT INTO EMPREGADO VALUES ('Ana Luíza Oliveira', '12345678900', tp_endereco('04108-042', 'Rua Américo Brasiliense', '250', 'São Paulo'), '12345678901243', 5000.00, tp_telefones(tp_telefone('(11)98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '45678912302'));
 
 -- POVOAMENTO DE GRADUADO
 
 INSERT INTO GRADUADO VALUES ('23456789102', 'Bacharel em Administração', 'Gerente Financeiro');
-INSERT INTO GRADUADO VALUES ('56789123406', 'Bacharel em Medicina Veterinária', 'Médico Platonista');
+INSERT INTO GRADUADO VALUES ('12345678900', 'Bacharel em Medicina Veterinária', 'Médico Platonista');
 INSERT INTO GRADUADO VALUES ('45678912302', 'Bacharel em Medicina Veterinária', 'Cirurgião Veterinário');
 INSERT INTO GRADUADO VALUES ('09876543210', 'Bacharel em Marketing', 'Marketing da Clínica');
 
