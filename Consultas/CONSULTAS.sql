@@ -103,3 +103,7 @@ BEGIN
     WHERE c.nome = 'João da Silva Santos';
     mb.endereco.exibirEndereco();
 END;
+
+-- CONSULTANDO OS CHEFES DOS EMPREGADOS
+SELECT E.nome as NOME_DO_EMPREGADO, DEREF(E.CHEFE).nome as NOME_DO_CHEFE
+FROM EMPREGADO E;
