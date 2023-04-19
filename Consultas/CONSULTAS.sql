@@ -59,12 +59,12 @@ LEFT JOIN tecnico t
 ON e.CPF = t.CPF_EMPREGADO
 WHERE t.CPF_EMPREGADO IS NULL;
 
---- Lista das Clinicas que possuem 3 ou mais funcionários | GROUP BY
+--- Lista das Clinicas que possuem 2 ou mais funcionários | GROUP BY
 SELECT C.NOME, COUNT(*)
 FROM CLINICA C INNER JOIN EMPREGADO E
 ON C.CNPJ = E.CNPJ_CLINICA
 GROUP BY C.NOME
-HAVING COUNT(*) > 2;
+HAVING COUNT(*) > 1;
 
 --- Lista dos clientes que também são empregados na clinica | INTERSECT OPERAÇÃO DE CONJUNTO
 SELECT NOME as CLIENTE_EMPREGADO
