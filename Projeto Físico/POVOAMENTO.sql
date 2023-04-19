@@ -1,14 +1,14 @@
 -- POVOAMENTO DE CLIENTES
 
-INSERT INTO CLIENTE VALUES ('85983960601', 'Tânia Dias Oliveira', tp_endereco('24743-690', 'Rua Augusto Melo', '89', 'Recife'), tp_telefones(tp_telefone('(19)78456-2145'), tp_telefone('(19)78456-2146'), tp_telefone('(19)78456-2147')));
-INSERT INTO CLIENTE VALUES ('75278960302', 'João da Silva Santos', tp_endereco('11013-330', 'Rua Conselheiro Rodrigues Alves', '135', 'Santos'), tp_telefones(tp_telefone('(13)1234-5678'), tp_telefone('(13)9876-5432')));
-INSERT INTO CLIENTE VALUES ('35925740105', 'Luana Sousa Oliveira', tp_endereco('88025-001', 'Rua João Pio Duarte Silva', '234', 'Florianópolis'), tp_telefones(tp_telefone('(48)3214-5678'), tp_telefone('(48)9876-4321')));
-INSERT INTO CLIENTE VALUES ('54817680910', 'Pedro Henrique Rocha', tp_endereco('31030-270', 'Rua Diamantina', '42', 'Belo Horizonte'), tp_telefones(tp_telefone('(31)3245-6789'), tp_telefone('(31)9876-5432'), tp_telefone('(31)9215-6478')));
-INSERT INTO CLIENTE VALUES ('95180220707', 'Mariana Lima Santos', tp_endereco('60170-051', 'Rua Osvaldo Cruz', '67', 'Fortaleza'), tp_telefones(tp_telefone('(85)3874-1234'), tp_telefone('(85)9867-4321')));
-INSERT INTO CLIENTE VALUES ('11498702315', 'Fernando Silva Carvalho', tp_endereco('40170-010', 'Avenida Antônio Carlos Magalhães', '157', 'Salvador'), tp_telefones(tp_telefone('(71)3267-8901'), tp_telefone('(71)9876-5432')));
-INSERT INTO CLIENTE VALUES ('12345678900', 'Ana Luíza Oliveira', tp_endereco('40310-010', 'Rua Castro Alves', '123', 'Salvador'), tp_telefones(tp_telefone('(71)9999-8888'), tp_telefone('(71)5555-4444')));
-INSERT INTO CLIENTE VALUES ('78965432199', 'Marcos Pereira', tp_endereco('01310-100', 'Avenida Paulista', '456', 'São Paulo'), tp_telefones(tp_telefone('(11)7777-2222')));
-INSERT INTO CLIENTE VALUES ('11122233344', 'Juliana Almeida', tp_endereco('80060-240', 'Rua José Bonifácio', '789', 'Curitiba'), tp_telefones(tp_telefone('(41)1111-2222'), tp_telefone('(41)3333-4444'), tp_telefone('(41)5555-6666')));
+INSERT INTO CLIENTE VALUES ('Tânia Dias Oliveira','85983960601', tp_endereco('24743-690', 'Rua Augusto Melo', '89', 'Recife'), tp_telefones(tp_telefone('(19)78456-2145'), tp_telefone('(19)78456-2146'), tp_telefone('(19)78456-2147')));
+INSERT INTO CLIENTE VALUES ('João da Silva Santos', '75278960302', tp_endereco('11013-330', 'Rua Conselheiro Rodrigues Alves', '135', 'Santos'), tp_telefones(tp_telefone('(13)1234-5678'), tp_telefone('(13)9876-5432')));
+INSERT INTO CLIENTE VALUES ('Luana Sousa Oliveira','35925740105',  tp_endereco('88025-001', 'Rua João Pio Duarte Silva', '234', 'Florianópolis'), tp_telefones(tp_telefone('(48)3214-5678'), tp_telefone('(48)9876-4321')));
+INSERT INTO CLIENTE VALUES ('Pedro Henrique Rocha', '54817680910', tp_endereco('31030-270', 'Rua Diamantina', '42', 'Belo Horizonte'), tp_telefones(tp_telefone('(31)3245-6789'), tp_telefone('(31)9876-5432'), tp_telefone('(31)9215-6478')));
+INSERT INTO CLIENTE VALUES ('Mariana Lima Santos', '95180220707', tp_endereco('60170-051', 'Rua Osvaldo Cruz', '67', 'Fortaleza'), tp_telefones(tp_telefone('(85)3874-1234'), tp_telefone('(85)9867-4321')));
+INSERT INTO CLIENTE VALUES ( 'Fernando Silva Carvalho', '11498702315',tp_endereco('40170-010', 'Avenida Antônio Carlos Magalhães', '157', 'Salvador'), tp_telefones(tp_telefone('(71)3267-8901'), tp_telefone('(71)9876-5432')));
+INSERT INTO CLIENTE VALUES ('Ana Luíza Oliveira','12345678900',  tp_endereco('40310-010', 'Rua Castro Alves', '123', 'Salvador'), tp_telefones(tp_telefone('(71)9999-8888'), tp_telefone('(71)5555-4444')));
+INSERT INTO CLIENTE VALUES ('Marcos Pereira', '78965432199', tp_endereco('01310-100', 'Avenida Paulista', '456', 'São Paulo'), tp_telefones(tp_telefone('(11)7777-2222')));
+INSERT INTO CLIENTE VALUES ( 'Juliana Almeida', '11122233344',tp_endereco('80060-240', 'Rua José Bonifácio', '789', 'Curitiba'), tp_telefones(tp_telefone('(41)1111-2222'), tp_telefone('(41)3333-4444'), tp_telefone('(41)5555-6666')));
 
 -- POVOAMENTO DE ANIMAIS
 
@@ -74,19 +74,19 @@ INSERT INTO EMPREGADO VALUES ('Gabriela', '56789123406', tp_endereco('04108-042'
 
 -- POVOAMENTO DE GRADUADO
 
-INSERT INTO GRADUADO VALUES ('E00001', 'Bacharel em Administração', 'Gerente Financeiro');
-INSERT INTO GRADUADO VALUES ('E00002', 'Bacharel em Medicina Veterinária', 'Médico Platonista');
-INSERT INTO GRADUADO VALUES ('E00003', 'Bacharel em Medicina Veterinária', 'Cirurgião Veterinário');
-INSERT INTO GRADUADO VALUES ('E00004', 'Bacharel em Marketing', 'Marketing da Clínica');
+INSERT INTO GRADUADO VALUES ('23456789101', 'Bacharel em Administração', 'Gerente Financeiro');
+INSERT INTO GRADUADO VALUES ('56789123406', 'Bacharel em Medicina Veterinária', 'Médico Platonista');
+INSERT INTO GRADUADO VALUES ('45678912302', 'Bacharel em Medicina Veterinária', 'Cirurgião Veterinário');
+INSERT INTO GRADUADO VALUES ('09876543210', 'Bacharel em Marketing', 'Marketing da Clínica');
 
 
 -- POVOAMENTO DE TECNICO
 
-INSERT INTO TECNICO VALUES ('E00001', 'Técnico de Enfermagem');
-INSERT INTO TECNICO VALUES ('E00002', 'Técnico de Radiologia');
-INSERT INTO TECNICO VALUES ('E00003', 'Técnico de Laboratório');
-INSERT INTO TECNICO VALUES ('E00004', 'Técnico de Análises Clínicas');
-INSERT INTO TECNICO VALUES ('E00005', 'Técnico de Nutrição');
+INSERT INTO TECNICO VALUES ('23456789101', 'Técnico de Enfermagem');
+INSERT INTO TECNICO VALUES ('34567891234', 'Técnico de Radiologia');
+INSERT INTO TECNICO VALUES ('12345678902', 'Técnico de Laboratório');
+INSERT INTO TECNICO VALUES ('98765432101', 'Técnico de Análises Clínicas');
+INSERT INTO TECNICO VALUES ('34567891234', 'Técnico de Nutrição');
 
 -- POVOAMENTO DE LOJA
 
