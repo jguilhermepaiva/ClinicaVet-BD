@@ -30,13 +30,13 @@ LEFT OUTER JOIN animal a
 ON a.CPF_CLIENTE = c.CPF;
 
 --- Lista de todos os funcionários que possuem uma graduação universitária e suas informações de emprego correspondentes, mesmo que alguns funcionários não tenham uma correspondência na tabela "empregado" (RIGHT OUTER JOIN)
-SELECT e.nome as nome_empregado, e.chefe, e.salario, g.diploma, g.funcao
+SELECT e.nome as nome_empregado, e.salario, g.diploma, g.funcao
 FROM empregado e
 RIGHT OUTER JOIN graduado g
-ON e.CODEMPREGADO = g.CODEMPREGADO;
+ON e.CPF = g.CPF_EMPREGADO;
 
 --- Lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários. (FULL OUTER JOIN)
-SELECT c.nome as nome_clinica, c.localizacao, e.nome as nome_empregado
+SELECT c.nome as nome_clinica, e.nome as nome_empregado
 FROM clinica c
 FULL OUTER JOIN empregado e
 ON c.CNPJ = e.CNPJ_CLINICA;
@@ -56,8 +56,8 @@ WHERE CODSERVICO IN (
 SELECT e.*
 FROM empregado e
 LEFT JOIN tecnico t
-ON e.CODEMPREGADO = t.CODEMPREGADO
-WHERE t.CODEMPREGADO IS NULL;
+ON e.CPF = t.CPF_EMPREGADO
+WHERE t.CPF_EMPREGADO IS NULL;
 
 --- Lista das Clinicas que possuem 3 ou mais funcionários | GROUP BY
 SELECT C.NOME, COUNT(*)
@@ -95,9 +95,7 @@ FROM TABLE(
     WHERE CPF = '35925740105'
 );
 
-
--- CONSULTANDO O ENDEREÇO  DO CLIENTE DE NOME 'João da Silva Santos'
-
+-- Consultando o endereço do cliente de nome 'João da Silva Santos'
 DECLARE
     mb TP_CLIENTE;
 BEGIN 
