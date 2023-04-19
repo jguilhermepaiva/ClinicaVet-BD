@@ -74,7 +74,7 @@ INSERT INTO EMPREGADO VALUES ('Gabriela', '56789123406', tp_endereco('04108-042'
 
 -- POVOAMENTO DE GRADUADO
 
-INSERT INTO GRADUADO VALUES ('23456789101', 'Bacharel em Administração', 'Gerente Financeiro');
+INSERT INTO GRADUADO VALUES ('23456789102', 'Bacharel em Administração', 'Gerente Financeiro');
 INSERT INTO GRADUADO VALUES ('56789123406', 'Bacharel em Medicina Veterinária', 'Médico Platonista');
 INSERT INTO GRADUADO VALUES ('45678912302', 'Bacharel em Medicina Veterinária', 'Cirurgião Veterinário');
 INSERT INTO GRADUADO VALUES ('09876543210', 'Bacharel em Marketing', 'Marketing da Clínica');
@@ -86,7 +86,7 @@ INSERT INTO TECNICO VALUES ('23456789101', 'Técnico de Enfermagem');
 INSERT INTO TECNICO VALUES ('34567891234', 'Técnico de Radiologia');
 INSERT INTO TECNICO VALUES ('12345678902', 'Técnico de Laboratório');
 INSERT INTO TECNICO VALUES ('98765432101', 'Técnico de Análises Clínicas');
-INSERT INTO TECNICO VALUES ('34567891234', 'Técnico de Nutrição');
+INSERT INTO TECNICO VALUES ('34567891235', 'Técnico de Nutrição');
 
 -- POVOAMENTO DE LOJA
 
