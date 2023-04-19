@@ -10,7 +10,9 @@
   <p align="center">
     CIn UFPE | April 2023 | Database
     <br />
-    <a href="https://github.com/jguilhermepaiva/ClinicaVet-BD](https://www.canva.com/design/DAFge1xRgSs/CYC1v9tGjUSc90IC5hclng/edit?utm_content=DAFge1xRgSs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)"><strong>Slide de Apresentação »</strong></a>
+    <a href="https://github.com/jguilhermepaiva/ClinicaVet-BD"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://www.canva.com/design/DAFge1xRgSs/CYC1v9tGjUSc90IC5hclng/edit?utm_content=DAFge1xRgSs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>See Presentation slides »</strong></a>
     <br />
     <br />
   </p>
