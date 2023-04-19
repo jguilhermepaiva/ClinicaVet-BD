@@ -13,7 +13,7 @@ GROUP BY produto.tipo, produto.marca
 HAVING COUNT(*) >= 2;
 
 --- Lista dos clientes que possuem pelo menos um animal em sua posse e a lista dos animais que eles possuem | SUBCONSULTA DO TIPO TABELA
-SELECT c.nome, c.cep, c.CPF, a.CODANIMAL as cod_animal, a.nome as nome_animal
+SELECT c.nome, c.CPF, a.CODANIMAL as cod_animal, a.nome as nome_animal
 FROM cliente c
 INNER JOIN (
     SELECT CPF_CLIENTE, CODANIMAL, NOME
@@ -33,10 +33,10 @@ ON a.CPF_CLIENTE = c.CPF;
 SELECT e.nome as nome_empregado, e.chefe, e.salario, g.diploma, g.funcao
 FROM empregado e
 RIGHT OUTER JOIN graduado g
-ON e.CODEMPREGADO = g.CODEMPREGADO;
+ON e.CPF = g.CPF_EMPREGADO;
 
 --- Lista de todas as clínicas e seus funcionários correspondentes, incluindo as clínicas que não possuem funcionários. (FULL OUTER JOIN)
-SELECT c.nome as nome_clinica, c.localizacao, e.nome as nome_empregado
+SELECT c.nome as nome_clinica, e.nome as nome_empregado
 FROM clinica c
 FULL OUTER JOIN empregado e
 ON c.CNPJ = e.CNPJ_CLINICA;
@@ -56,8 +56,8 @@ WHERE CODSERVICO IN (
 SELECT e.*
 FROM empregado e
 LEFT JOIN tecnico t
-ON e.CODEMPREGADO = t.CODEMPREGADO
-WHERE t.CODEMPREGADO IS NULL;
+ON e.CPF = t.CPF_EMPREGADO
+WHERE t.CPF_EMPREGADO IS NULL;
 
 --- Lista das Clinicas que possuem 3 ou mais funcionários | GROUP BY
 SELECT C.NOME, COUNT(*)
