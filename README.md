@@ -92,13 +92,13 @@ Contratam (CPF, CNPJ, Cupom)
         CPF -> Cliente(CPF)
         CNPJ -> Clínica(CNPJ)
 Cupom -> Desconto(Cupom);
-Empregado (CodEmpregado, CNPJ, Telefone, Nome, Salario, CHEFE)
+Empregado (CPF, CNPJ, Telefone, Nome, Salario, CHEFE)
         CNPJ -> Clínica(CNPJ)
-        CHEFE -> Empregado(CodEmpregado);
-Graduado(CodEmpregado, Diploma, Função)
-        CodEmpregado -> Empregado(CodEmpregado);
-Tecnico(CodEmpregado, Função)
-CodEmpregado -> Empregado(CodEmpregado);
+        CHEFE -> Empregado(CPF);
+Graduado(CPF, Diploma, Função)
+        CPF -> Empregado(CPF);
+Tecnico(CPF, Função)
+        CPF -> Empregado(CPF);
 Loja(CodLoja, CNPJ, Telefone, Endereço)
         CNPJ -> Clínica(CNPJ);
 Serviço(CodServiço, CodCliente, Data, Tipo, Valor);
