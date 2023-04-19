@@ -62,15 +62,15 @@ INSERT INTO CONTRATAM VALUES ('11122233344', '12345678901234', 'DESC30');
 
 -- POVOAMENTO DE EMPREGADOS
 
-INSERT INTO EMPREGADO VALUES ('Ana', '98765432101', tp_endereco('04828-010', 'Rua Carlos Caldeira Filho', '45', 'São Paulo'), '12345678901234', 3500, tp_telefones(tp_telefone('(11) 94567-8912')), NULL);
-INSERT INTO EMPREGADO VALUES ('Pedro', '12345678902', tp_endereco('04108-041', 'Rua Américo Brasiliense', '320', 'São Paulo'), '12345678901235', 2800, tp_telefones(tp_telefone('(11) 98567-1234')), NULL);
-INSERT INTO EMPREGADO VALUES ('Maria', '34567891234', tp_endereco('30140-080', 'Rua dos Guajajaras', '1000', 'Belo Horizonte'), '12345678901236', 4000, tp_telefones(tp_telefone('(31) 98765-4321')), NULL);
-INSERT INTO EMPREGADO VALUES ('Luiz', '23456789102', tp_endereco('88010-300', 'Rua dos Ilhéus', '85', 'Florianópolis'), '12345678901237', 3200, tp_telefones(tp_telefone('(48) 98876-5432')), NULL);
-INSERT INTO EMPREGADO VALUES ('Lorena', '09876543210', tp_endereco('04567-123', 'Rua Augusta', '450', 'São Paulo'), '12345678901238', 3500.00, tp_telefones(tp_telefone('(11) 94567-8912')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678912'));
-INSERT INTO EMPREGADO VALUES ('Rafael', '23456789101', tp_endereco('30110-021', 'Rua da Bahia', '1000', 'Belo Horizonte'), '12345678901239', 2800.00, tp_telefones(tp_telefone('(31) 98567-1234')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678913'));
-INSERT INTO EMPREGADO VALUES ('Carla', '34567891235', tp_endereco('88010-301', 'Avenida Beira Mar', '150', 'Florianópolis'), '12345678901240', 4000.00, tp_telefones(tp_telefone('(48) 98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678914'));
-INSERT INTO EMPREGADO VALUES ('Renato', '45678912302', tp_endereco('22220-030', 'Rua Visconde de Pirajá', '500', 'Rio de Janeiro'), '12345678901241', 3200.00, tp_telefones(tp_telefone('(21) 99765-4321')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678915'));
-INSERT INTO EMPREGADO VALUES ('Gabriela', '56789123406', tp_endereco('04108-042', 'Rua Américo Brasiliense', '250', 'São Paulo'), '12345678901243', 5000.00, tp_telefones(tp_telefone('(11) 98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678916'));
+INSERT INTO EMPREGADO VALUES ('Ana', '98765432101', tp_endereco('04828-010', 'Rua Carlos Caldeira Filho', '45', 'São Paulo'), '12345678901234', 3500, tp_telefones(tp_telefone('(11)94567-8912')), NULL);
+INSERT INTO EMPREGADO VALUES ('Pedro', '12345678902', tp_endereco('04108-041', 'Rua Américo Brasiliense', '320', 'São Paulo'), '12345678901235', 2800, tp_telefones(tp_telefone('(11)98567-1234')), NULL);
+INSERT INTO EMPREGADO VALUES ('Maria', '34567891234', tp_endereco('30140-080', 'Rua dos Guajajaras', '1000', 'Belo Horizonte'), '12345678901236', 4000, tp_telefones(tp_telefone('(31)98765-4321')), NULL);
+INSERT INTO EMPREGADO VALUES ('Luiz', '23456789102', tp_endereco('88010-300', 'Rua dos Ilhéus', '85', 'Florianópolis'), '12345678901237', 3200, tp_telefones(tp_telefone('(48)98876-5432')), NULL);
+INSERT INTO EMPREGADO VALUES ('Lorena', '09876543210', tp_endereco('04567-123', 'Rua Augusta', '450', 'São Paulo'), '12345678901238', 3500.00, tp_telefones(tp_telefone('(11)94567-8912')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678912'));
+INSERT INTO EMPREGADO VALUES ('Rafael', '23456789101', tp_endereco('30110-021', 'Rua da Bahia', '1000', 'Belo Horizonte'), '12345678901239', 2800.00, tp_telefones(tp_telefone('(31)98567-1234')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678913'));
+INSERT INTO EMPREGADO VALUES ('Carla', '34567891235', tp_endereco('88010-301', 'Avenida Beira Mar', '150', 'Florianópolis'), '12345678901240', 4000.00, tp_telefones(tp_telefone('(48)98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678914'));
+INSERT INTO EMPREGADO VALUES ('Renato', '45678912302', tp_endereco('22220-030', 'Rua Visconde de Pirajá', '500', 'Rio de Janeiro'), '12345678901241', 3200.00, tp_telefones(tp_telefone('(21)99765-4321')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678915'));
+INSERT INTO EMPREGADO VALUES ('Gabriela', '56789123406', tp_endereco('04108-042', 'Rua Américo Brasiliense', '250', 'São Paulo'), '12345678901243', 5000.00, tp_telefones(tp_telefone('(11)98876-5432')), (SELECT REF(E) FROM EMPREGADO E WHERE CPF = '12345678916'));
 
 -- POVOAMENTO DE GRADUADO
 
