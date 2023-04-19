@@ -30,7 +30,7 @@ LEFT OUTER JOIN animal a
 ON a.CPF_CLIENTE = c.CPF;
 
 --- Lista de todos os funcionários que possuem uma graduação universitária e suas informações de emprego correspondentes, mesmo que alguns funcionários não tenham uma correspondência na tabela "empregado" (RIGHT OUTER JOIN)
-SELECT e.nome as nome_empregado, e.chefe, e.salario, g.diploma, g.funcao
+SELECT e.nome as nome_empregado, e.salario, g.diploma, g.funcao
 FROM empregado e
 RIGHT OUTER JOIN graduado g
 ON e.CPF = g.CPF_EMPREGADO;
@@ -80,3 +80,24 @@ FROM produto
 WHERE CODPRODUTO = oferecem.CODPRODUTO)
 AS preco_unitario
 FROM oferecem;
+
+-- Lista dos telefones de cada cliente
+SELECT C.NOME, T.*
+FROM CLIENTE C, TABLE(C.TELEFONES) T;
+
+-- Consultando os numeros de telefone do cliente de CPF '35925740105'
+SELECT *
+FROM TABLE(
+    SELECT C.TELEFONES
+    FROM CLIENTE C
+    WHERE CPF = '35925740105'
+);
+
+-- Consultando o endereço do cliente de nome 'João da Silva Santos'
+DECLARE
+    mb TP_CLIENTE;
+BEGIN 
+    SELECT VALUE(c) INTO mb FROM CLIENTE c
+    WHERE c.nome = 'João da Silva Santos';
+    mb.endereco.exibirEndereco();
+END;
