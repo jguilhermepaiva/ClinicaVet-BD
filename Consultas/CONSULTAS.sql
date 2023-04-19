@@ -73,3 +73,10 @@ INTERSECT
 SELECT NOME
 FROM EMPREGADO;
 
+--- Lista das lojas correspondentes onde os produtos são oferecidos | SUBCONSULTA DO TIPO LINHA
+SELECT CODPRODUTO, CODLOJA, DATASERVICO,
+(SELECT VALORUNITARIO
+FROM produto 
+WHERE CODPRODUTO = oferecem.CODPRODUTO)
+AS preco_unitario
+FROM oferecem;
