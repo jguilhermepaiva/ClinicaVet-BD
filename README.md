@@ -12,7 +12,7 @@
     <br />
     <a href="https://github.com/jguilhermepaiva/ClinicaVet-BD"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://www.canva.com/design/DAFge1xRgSs/CYC1v9tGjUSc90IC5hclng/edit?utm_content=DAFge1xRgSs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>See Presentation slides »</strong></a>
+    <a target="_blank" href="https://www.canva.com/design/DAFge1xRgSs/CYC1v9tGjUSc90IC5hclng/edit?utm_content=DAFge1xRgSs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>See Presentation slides »</strong></a>
     <br />
     <br />
   </p>
